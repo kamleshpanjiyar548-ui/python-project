@@ -1,0 +1,70 @@
+print("""
+1. Addition
+2. substraction
+3. multiplication
+4. Division
+5. Modulus
+6. Exponentiation
+7. Exit
+""")
+try:
+    choice = input("Enter the number: ")
+    if choice == "7":
+        print("Exiting Goodbye!")
+
+    elif choice == "1":
+        try:
+            x = float(input("Enter your first number: "))
+            y = float(input("Enter your second number: "))
+            print("The sum is :", x + y)
+        except valueError:
+                print("Please Enter the  valid number: ")
+    
+    elif choice == "2":
+        try:
+            x = float(input("Enter your first number: "))
+            y = float(input("Enter your second number: "))
+            print("The substraction is :", x - y)
+        except valueError:
+                print("Please Enter the  valid number: ")
+
+    elif choice == "3":
+        try:
+            x = float(input("Enter your first number: "))
+            y = float(input("Enter your second number: "))
+            print("The Multiplication is :", x * y)
+        except valueError:
+                print("Please Enter the  valid number: ")
+
+    elif choice == "4":
+        try:
+            x = float(input("Enter your first number: "))
+            y = float(input("Enter your second number: "))
+            print("The Divide is :", x / y)
+        except valueError:
+                print("Please Enter the  valid number: ")
+
+
+    elif choice == "5":
+        try:
+            x = float(input("Enter your first number: "))
+            y = float(input("Enter your second number: "))
+            print("The Modulu is :", x % y)
+        except valueError:
+                print("Please Enter the  valid number: ")
+
+    elif choice == "6":
+        try:
+            x = float(input("Enter your Base number: "))
+            y = float(input("Enter your expont number: "))
+            print("The Exponentiation is :", x ** y )
+            
+        except valueError:
+                print("Please Enter the  valid number: ")
+
+    else:
+        print("The input is invalid: ")
+        
+except Exception as o:
+        print("Unexpected Error :", o)
+            
