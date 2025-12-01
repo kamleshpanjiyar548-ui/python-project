@@ -1,0 +1,12 @@
+from gtts import gTTS
+
+Text = input(f"Enter text you want to convert audio: ")
+
+TextToSpeech = gTTS(Text, lang='en') #English
+TextToSpeech = gTTS(Text, lang='hi') #HIndi or Whatsapp Language
+TextToSpeech.save("kamlesh.mp3")
+
+print("Audio saved as kamlesh.mp3")
+from playsound import playsound
+
+playsound("kamlesh.mp3")
