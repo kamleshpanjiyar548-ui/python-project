@@ -1,0 +1,19 @@
+Balance = 10000
+pin = 1234
+
+Attempt = 0
+while Attempt < 3 :
+    user_pin =int(input("Enter your pin :"))
+    if user_pin==pin :
+        print("your Balance is : ", Balance)
+        Amount=int(input("The amount withdrawl :"))
+        Balance -= Amount
+        print("conguragt your withdrawl the Amount")
+        print("new Blance is : " , Balance)
+        break;
+    else :
+        print("The input is invalid : ")
+        Attempt+=1
+
+    if Attempt==3:
+        print("your access denied :")
