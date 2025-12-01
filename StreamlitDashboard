@@ -1,0 +1,18 @@
+import streamlit as st
+import pandas as pd
+import matplotlib as plt
+st.title("KAMLESH'S Dashboard")
+st.text("Welcome to our Dashboard")
+st.header("Welcome")
+st.write("")
+name = st.text_input("Enter your name:")
+age = st.number_input("Enter your age:")
+st.write("Your name is:",name)
+st.write("Your age is:", age)
+st.selectbox("Enter your course:", ["B.TECH ","BCA", "MCA"])
+if st.button("Click me"):
+    st.success("Clicked buton")
+    file = st.file_uploader("Upload your file")
+    if file:
+        content = file.read()
+        st.write("Upload File")
